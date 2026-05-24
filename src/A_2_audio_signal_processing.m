@@ -155,11 +155,12 @@ xlim([-3000 3000]);
 exportgraphics(fig6, fullfile(figPath,'mozart_spectrum_after.png'), 'Resolution', 300);
 
 
-audiowrite(fullfile(audioPath,'mozart_filtre_2.wav'), bonjour_filt, Fs1);
+audiowrite(fullfile(audioPath,'mozart_filtre.wav'), mozart_filt, Fs1);
 
 
 % Observation:
-% An other strong narrow peak still appears around 2830 Hz,
+% Ameliation in soud quality but still noisy.
+% An other strong narrow peak appears around 2830 Hz,
 % indicating a tonal interference in the signal.
 
 
