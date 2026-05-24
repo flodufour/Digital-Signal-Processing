@@ -1,0 +1,20 @@
+# MATLAB
+*.asv
+*.m~
+slprj/
+codegen/
+*.mat
+*.fig
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# OS files
+.DS_Store
+Thumbs.db
