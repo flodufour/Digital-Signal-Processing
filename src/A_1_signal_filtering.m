@@ -1,11 +1,12 @@
 clear; close all; clc;
 
-%% Create figures folder if it does not exist
-basePath = fileparts(fileparts(mfilename('fullpath')));
-figPath = fullfile(basePath, 'figures');
+%% Get script folder (src)
+scriptPath = fileparts(mfilename('fullpath'));
 
+%% Go to project root
+figPath   = fullfile(basePath,'..','figures');
 
-if ~exist(figPath, 'dir')
+if ~exist(figPath,'dir')
     mkdir(figPath);
 end
 
