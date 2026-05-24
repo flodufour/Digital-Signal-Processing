@@ -4,7 +4,7 @@ clear; close all; clc;
 scriptPath = fileparts(mfilename('fullpath'));
 
 %% Go to project root
-figPath   = fullfile(basePath,'..','figures');
+figPath   = fullfile(scriptPath,'..','figures');
 
 if ~exist(figPath,'dir')
     mkdir(figPath);
